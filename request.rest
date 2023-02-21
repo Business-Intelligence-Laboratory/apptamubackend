@@ -1,0 +1,38 @@
+GET http://localhost:6000/tamu
+
+###
+
+GET http://localhost:6000/tamuById/63a703326e5e38881ac53ce4
+
+
+###
+
+POST http://localhost:6000/saveTamu
+Content-Type: application/json
+
+{
+    "nama": "tipa",
+    "instansi": "sistem informasi",
+    "role": "asisten",
+    "noIdentitas": "4321",
+    "jenisKelamin": "P",
+    "statusKunjungan": "jaga lab"
+}
+
+###
+
+PATCH http://localhost:6000/updateTamu/63a703326e5e38881ac53ce4
+Content-Type: application/json
+
+{
+    "nama": "rad",
+    "instansi": "sistem informasi",
+    "role": "asisten",
+    "noIdentitas": "4321",
+    "jenisKelamin": "L",
+    "statusKunjungan": "jaga lab"
+}
+
+###
+
+DELETE  http://localhost:6000/deleteTamu/63a7082843c672d3e5676944
