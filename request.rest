@@ -7,7 +7,7 @@ GET http://localhost:6000/tamuById/63a703326e5e38881ac53ce4
 
 ###
 
-POST http://localhost:6000/saveTamu
+POST http://localhost:6000/saveUser
 Content-Type: application/json
 
 {
@@ -36,3 +36,16 @@ Content-Type: application/json
 ###
 
 DELETE  http://localhost:6000/deleteTamu/63a7082843c672d3e5676944
+
+###
+
+POST http://localhost:6000/saveTamu
+Content-Type: application/json
+
+{
+    "nama": "jon",
+    "noIdentitas": "4321",
+    "instansi": "sistem informasi",
+    "jenisKelamin": "P",
+    "statusKunjungan": "jaga lab"
+}

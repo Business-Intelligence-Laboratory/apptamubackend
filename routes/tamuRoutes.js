@@ -1,18 +1,10 @@
 import express from "express";
 import {
-    getTamu,
-    getTamuById,
-    saveTamu,
-    updateTamu,
-    deleteTamu
+    saveTamu
 } from "../controller/tamuController.js";
 
-const router = express.Router();
+const tamuRoutes = express.Router();
 
-router.get('/tamu', getTamu);
-router.get('/tamuById/:id', getTamuById);
-router.post('/saveTamu', saveTamu);
-router.patch('/updateTamu/:id', updateTamu);
-router.delete('/deleteTamu/:id', deleteTamu);
+tamuRoutes.post('/saveTamu', saveTamu);
 
-export default router;
+export default tamuRoutes;

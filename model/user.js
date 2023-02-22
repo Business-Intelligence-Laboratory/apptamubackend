@@ -1,13 +1,16 @@
 import mongoose from "mongoose";
 
-const Tamu = mongoose.Schema({
+const User = mongoose.Schema({
     nama: {
         type: String
     },
-    noIdentitas:{
+    instansi:{
         type: String
     },
-    instansi:{
+    role:{
+        type: String
+    },
+    noIdentitas:{
         type: String
     },
     jenisKelamin:{
@@ -17,8 +20,8 @@ const Tamu = mongoose.Schema({
         type: String
     },
     waktuKunjungan:{
-        type: String
+        type: Date
     }
 });
 
-export default mongoose.model('Guests', Tamu);
+export default mongoose.model('Users', User);
