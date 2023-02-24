@@ -18,7 +18,7 @@ const Tamu = mongoose.Schema({
     },
     waktuKunjungan:{
         type: String
-    }
-});
+    },
+}, {collection: 'Guests'});
 
 export default mongoose.model('Guests', Tamu);

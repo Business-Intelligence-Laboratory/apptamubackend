@@ -22,6 +22,6 @@ const User = mongoose.Schema({
     waktuKunjungan:{
         type: Date
     }
-});
+}, {collection: 'Users'});
 
 export default mongoose.model('Users', User);
