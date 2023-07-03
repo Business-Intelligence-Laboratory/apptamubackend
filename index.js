@@ -10,6 +10,7 @@ mongoose.connect('mongodb+srv://lbiftiunandcloud:lbiftiunandcloud@programlab.5p1
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
+mongoose.set("strictQuery", false);
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 db.on("listening", console.error.bind(console, "Listening MongoDB:"));
